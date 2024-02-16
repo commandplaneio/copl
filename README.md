@@ -27,5 +27,6 @@ attaches the local computer to the remote environment.
 uplods the synchronization configuration as a yaml file.
 
 ## What's next
-- Granular config options for different personas
-- Point to point VPN.
+- VS Code extension
+- Point to point VPN
+- - Granular config options for different personas
