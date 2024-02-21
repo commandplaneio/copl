@@ -16,11 +16,15 @@ Where the primary user is the developer, anybody can use it to demo the app, see
 
 
 ```copl dev aws -b main -c -w```
-creates the environment on AWS, from the main branch, cleans the existing one and waits for the helm deployment to finish.
+
+
+It creates the environment on AWS, from the main branch, cleans the existing one and waits for the helm deployment to finish.
 
 
 ```copl attach```
-attaches the local computer to the remote environment.
+
+
+It attaches the local computer to the remote environment.
 
 
 ```copl config -s any.yaml```
