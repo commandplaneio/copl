@@ -15,20 +15,21 @@ Where the primary user is the developer, anybody can use it to demo the app, see
 ### How to use it
 
 
-```copl dev aws -b main -c -w```
+```copl dev aws -b main -c -w  ```
 
 
 It creates the environment on AWS, from the main branch, cleans the existing one and waits for the helm deployment to finish.
 
 
-```copl attach```
+```copl attach  ```
 
 
-It attaches the local computer to the remote environment.
+It attaches the local computer to the remote environment.You can add ```--no-log``` argument to stop logs streaming.
 
 
-```copl config -s any.yaml```
-uplods the synchronization configuration as a yaml file.
+```copl config -s any.yaml  ```
+
+It uploads the synchronization configuration as a yaml file.
 
 ## What's next
 - VS Code extension
