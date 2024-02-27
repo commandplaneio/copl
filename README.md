@@ -1,4 +1,4 @@
-# copl-releases
+# The Ultiamte Workflow Tool for Remote Preview and Developer Environments
 
 The public release page of copl.
 Check the web site for more [info](https://beta.commandplane.io).
