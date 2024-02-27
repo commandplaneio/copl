@@ -34,4 +34,4 @@ It uploads the synchronization configuration as a yaml file.
 ## What's next
 - VS Code extension
 - Point to point VPN
--     Granular config options for different personas
+  - Granular config options for different personas
