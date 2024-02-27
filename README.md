@@ -1,9 +1,6 @@
 # The Ultimate Workflow Tool for Remote Preview and Developer Environments
 
-The public release page of copl.
-
-Check the web site for more [info](https://beta.commandplane.io).
-
+This is the public releases page of copl. Check [the web site](https://beta.commandplane.io) for more info abotu how yoiu can benefit from copl.
 
 To reach out to us, email info@commandplane.io
 
