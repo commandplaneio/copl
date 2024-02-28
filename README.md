@@ -17,7 +17,11 @@ For brew installation, it is simply
 brew tap commandplaneio/copl
 brew install copl
 ```
-
+To get the latest version via brew, you need to do 
+```
+brew update
+brew upgrade
+```
 ### How to use it
 
 
