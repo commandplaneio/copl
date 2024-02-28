@@ -24,21 +24,26 @@ brew upgrade
 ```
 ### How to use it
 
-
-```copl dev aws --branch main --clean -wait-for-helm  --user nobody ```
+```
+copl dev aws --branch main --clean -wait-for-helm  --user nobody
+```
 
 
 It creates the environment on AWS, from the main branch, cleans the existing one and waits for the helm deployment to finish.
 
 
-```copl attach --no-log --no-sync```
+```
+copl attach --no-log --no-sync
+```
 
 
 It attaches the local computer to the remote environment.You can add ```--no-log``` argument to stop logs streaming.
 
 #### Optional
 If you want to upload a specific synchronisation config file, you can do this via the command below.
-```copl config -s any.yaml  ```
+```
+copl config -s any.yaml
+```
 
 It uploads the synchronization configuration as a yaml file.
 
