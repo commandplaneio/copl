@@ -25,21 +25,25 @@ brew upgrade
 ### How to use it
 
 
-```copl dev aws -b main -c -w  ```
+```copl dev aws --branch main --clean -wait-for-helm  ```
 
 
 It creates the environment on AWS, from the main branch, cleans the existing one and waits for the helm deployment to finish.
 
 
-```copl attach  ```
+```copl attach --no-log --no-sync```
 
 
 It attaches the local computer to the remote environment.You can add ```--no-log``` argument to stop logs streaming.
 
-
+#### Optional
+If you want to upload a specific synchronisation config file, you can do this via the command below.
 ```copl config -s any.yaml  ```
 
 It uploads the synchronization configuration as a yaml file.
+
+The common pattern is that the remote hot loading environment responds well to the code changes but for library changes the runtime must be restarted. Using this configuration you can tell the copl to kill the pod when there is a library change.
+Also this will save you from downloading real time directories like logs, no_modules, etc. For further details check the syncconfig.yaml file under ~/.config/copl directory to see all the options.
 
 ## What's next
 - VS Code extension
