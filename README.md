@@ -25,7 +25,7 @@ brew upgrade
 ### How to use it
 
 ```
-copl dev aws --branch main --clean -wait-for-helm  --user nobody
+copl dev aws --branch main --clean --wait-for-helm  --user nobody
 ```
 
 
