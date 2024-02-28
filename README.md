@@ -25,7 +25,7 @@ brew upgrade
 ### How to use it
 
 
-```copl dev aws --branch main --clean -wait-for-helm  ```
+```copl dev aws --branch main --clean -wait-for-helm  --user nobody ```
 
 
 It creates the environment on AWS, from the main branch, cleans the existing one and waits for the helm deployment to finish.
