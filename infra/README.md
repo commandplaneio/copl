@@ -35,3 +35,7 @@ aws iam create-open-id-connect-provider \
     ]
 }
 ```
+
+
+## GCP
+## Azure
