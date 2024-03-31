@@ -12,7 +12,8 @@ aws iam create-open-id-connect-provider \
 ```
 2. The minimum privileges are listed [here](iam-policy.json)
 3. Create the IAM role. Assign the permissions/policy created above.
-4. Create a trust policy defined [here](trust-policy.json)
+4. Create a trust policy defined [here](trust-policy.json).
+5. Send the Role ARN to info@copl.dev
 
 ## GCP
 ## Azure
