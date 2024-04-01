@@ -18,6 +18,7 @@
 		  "ec2:DescribeTags",
 		  "ec2:DescribeVolumes",
 		  "ec2:DescribeVpcs",
+		  "ec2:GetConsoleOutput",
 		  "ec2:DisassociateRouteTable",
 		  "sts:GetCallerIdentity"
 		],
