@@ -10,8 +10,8 @@ aws iam create-open-id-connect-provider \
     --url https://token.actions.githubusercontent.com \
     --client-id-list sts.amazonaws.com 
 ```
-2. The minimum privileges are listed [here](iam-policy.json)
-3. Create the IAM role. Assign the permissions/policy created above.
+2. Create a policy with the minimum privileges are listed [here](iam-policy.json)
+3. Create the IAM role and assign the permissions/policy created above.
 4. Create a trust policy defined [here](trust-policy.json).
 5. Send the Role ARN to info@copl.dev
 
