@@ -2,7 +2,7 @@
 Centralized helm charts needs to be placed onto s3. The current setup creates a bucket whose name starts with copl. The rest of the word is a timestamp.
 Under the topl level copl-XXXX directory, the structure is common/apps/charts and common/apps/dependency-charts
 
-You can see below the directory structure for the centralized copl file sources. 
+You can see below the directory structure for the centralized copl file sources. Teh examples also displays a successful run of ```helm dependency update``` which creates an archive of dependency chart under the Charts directory of the umbrella chart.
 
 ```
 |-- common
