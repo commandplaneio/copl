@@ -22,7 +22,8 @@
 				"ec2:DisassociateRouteTable",
 				"sts:GetCallerIdentity",
 				"ec2:CopyImage",
-				"ec2:ModifyImageAttribute"
+				"ec2:ModifyImageAttribute",
+				"iam:DeletePolicyVersion"
 			],
 			"Resource": "*"
 		},
@@ -122,7 +123,8 @@
 				"iam:CreateInstanceProfile",
 				"iam:AddRoleToInstanceProfile",
 				"iam:PassRole",
-				"iam:CreatePolicyVersion"
+				"iam:CreatePolicyVersion",
+				"iam:UpdateOpenIDConnectProviderThumbprint"
 			],
 			"Resource": "*"
 		}
