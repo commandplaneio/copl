@@ -30,6 +30,7 @@ copl dev aws --branch main --clean --wait-for-helm  --user nobody
 
 
 It creates the environment on AWS, from the main branch, cleans the existing one and waits for the helm deployment to finish.
+[v0.1.7] The cli now supports a copl.yaml file. See it [here.](./config/copl.yaml)
 
 
 ```
@@ -42,7 +43,7 @@ It attaches the local computer to the remote environment.You can add ```--no-log
 #### Optional
 If you want to upload a specific synchronisation config file, you can do this via the command below.
 ```
-copl config -s any.yaml
+copl config -s sync.yaml
 ```
 
 It uploads the synchronization configuration as a yaml file.
