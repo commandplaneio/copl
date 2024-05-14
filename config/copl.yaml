@@ -3,7 +3,14 @@
 # The global offset for both sections is the copl bucket. Check the s3 bucket in the account to see the bucket.
 #TODO The name format is copl-<account-id>-<region>. The bucket is used to store the build cache and the container image.
 # The folder structure inside the bucket follows the format of this config file. 
-
+remote:
+#How long the environment will run
+  ttl:
+#Cloud provider name
+  csp: aws
+  instance:
+  #instance type eg t3.2xlarge
+    type:
 # The build section is stored in the copl/build folder and the hot-pod section is stored in the copl/hot-pod folder.
 build:
   # This is local git repo
