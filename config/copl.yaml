@@ -41,6 +41,8 @@ hotPod:
   image: 
     repository: myrepo
     tag: cuttingedge
+  #Read the env vars from an .env file
+  env-file:
   # hot pod overrides the commands in the container to run the copl-built app in the previous section
   commands: |
     cd /app-copl
