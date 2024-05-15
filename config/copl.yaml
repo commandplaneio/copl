@@ -37,6 +37,14 @@ build:
 # 1. runs the app from the pre-built directory
 # 2. syncs the app source code directory with the local source code directory
 hotPod:
+# Warmup Job is in fact an init container that has virtually-all thesystem tools installed. 
+# A nice sample scenario is If you want HotPod to wait until your db is ready and imports data,
+# you can add a sleep here, then a mysql import.
+  WarmUpJob:
+# All your inbound and outboud traffic passes through this sidecar. It mis useful if you need 
+# observability metrics, or FQDN overwrites, SSL termination.
+  NetworkSidecar:
+# Defines the name of app inside the helm chart
   helmValuesSection: bestApp
   image: 
     repository: myrepo
@@ -48,4 +56,3 @@ hotPod:
     cd /app-copl
     bundle install
     yarn install
-  # hot pod is mounted with the copl-built app in the previous section. This includes the build cache and the app itself
