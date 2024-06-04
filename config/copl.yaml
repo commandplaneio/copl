@@ -13,22 +13,11 @@ remote:
     type: r5.2xlarge
 # The build section is stored in the copl/build folder and the hot-pod section is stored in the copl/hot-pod folder.
 build:
-  # This is local git repo
-  # the copl command can get this as well
-  # repo-name: 
-
-  # approot is the name of the directory that the app is in. It is used in three places
-  # 1. the location of the build cache
-  # 2. the location of the build command to run either inside the container or on the operating system
-  # 3. the location of the commands running for app in the container.
-
   # location of the build cache.It resides under the global copl bucket in a subfolder copl/build/cache
   cache:
     location: build/cache/dependencies.tar.gz
     # the location of the cache under the approot
     local: vendor/
-# DEPRECATED  We dont use a build container any more. Instead populate the <git-repo>/venbdor directory from s3. When Hot Pod starts it does the build.
-
 # Hot pod is the app that is on the focus. This app runs in hot reloading mode and
 # 1. runs the app from the pre-built directory
 # 2. syncs the app source code directory with the local source code directory
