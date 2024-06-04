@@ -9,8 +9,8 @@ remote:
 #Cloud provider name
   csp: aws
   instance:
-  #instance type eg t3.2xlarge
-    type:
+  #instance type eg r5.2xlarge
+    type: r5.2xlarge
 # The build section is stored in the copl/build folder and the hot-pod section is stored in the copl/hot-pod folder.
 build:
   # This is local git repo
@@ -21,14 +21,10 @@ build:
   # 1. the location of the build cache
   # 2. the location of the build command to run either inside the container or on the operating system
   # 3. the location of the commands running for app in the container.
-  approot: 
-
-  # local build command to run on the operating system
-  command: {}  
 
   # location of the build cache.It resides under the global copl bucket in a subfolder copl/build/cache
   cache:
-    location: copl/build/cache/dependencies.tar.gz
+    location: build/cache/dependencies.tar.gz
     # the location of the cache under the approot
     local: vendor/
 # DEPRECATED  We dont use a build container any more. Instead populate the <git-repo>/venbdor directory from s3. When Hot Pod starts it does the build.
